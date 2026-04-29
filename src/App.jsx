@@ -1,20 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { BrowserRouter } from "react-router-dom"
+import {Routing} from "../src/Routing/Routing.jsx"
 
-function App() {
-  const [count, setCount] = useState(0)
+export const App = () => {
+  return<>
 
-  return (
-    <>
-      
-      <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-          </>
-  )
-}
-
-export default App
+    <BrowserRouter>
+    
+    <Routing />
+    
+    </BrowserRouter>
+  
+  
+  </>}

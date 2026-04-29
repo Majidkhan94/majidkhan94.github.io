@@ -1,1 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
+body{
+  background-color: #131314;
+}
+
 @import "tailwindcss";
+
+@theme {
+  /* Backgrounds */
+  --color-CardBgColor: #484848;     /* Boxes aur cards ka background */
+  /* Colors */
+  --color-GoldColor: #facc15;        /* Buttons aur yellow text ke liye */
+  --color-GreyColor: #a1a1aa;   /* Paragraphs ke liye */
+  --color-NavColor: #d1d5db;
+  /* Font */
+  --font-bebas: 'Bebas Neue', sans-serif;
+  --font-oswald: 'Oswald', sans-serif;    /* Links ke liye */
+}
+
