@@ -9,7 +9,7 @@ body{
 @theme {
   /* Backgrounds */
   --color-CardBgColor: #484848;     /* Boxes aur cards ka background */
-  /* Colors */
+  --color-BodyColor: #131314;     /* Boxes aur cards ka background */
   --color-GoldColor: #facc15;        /* Buttons aur yellow text ke liye */
   --color-GreyColor: #a1a1aa;   /* Paragraphs ke liye */
   --color-NavColor: #d1d5db;
