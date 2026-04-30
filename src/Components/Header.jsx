@@ -15,9 +15,7 @@ export const Header = () => {
     <NavLink to="/Blog" className={({isActive})=> isActive ? "text-GoldColor" : "text-GreyColor"}>Blog</NavLink>
     <NavLink to="/Contactus" className={({ isActive }) => `bg-GoldColor px-6 py-2 rounded-md text-lg font-bebas tracking-[1px] transition-all duration-300 hover:bg-GreyColor`}> Contact Us </NavLink>
   </nav>
-        
-  {/* <NavLink to="/Contactus" className={({ isActive }) => `bg-GoldColor px-6 py-2 rounded-md text-lg font-bebas tracking-[1px] transition-all duration-300 hover:bg-GreyColor`}> Contact Us </NavLink> */}
-  </header>
+    </header>
     </>
   )
 }
