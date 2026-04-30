@@ -16,19 +16,19 @@ export const Header = ()=>{
       <nav className="md:flex gap-13 items-center font-bebas text-lg tracking-[1px] hidden">
     
       <NavLink to="/" className={({ isActive }) => `transition-all duration-1000 hover:text-GoldColor
-      ${ isActive ? "text-GoldColor" : "text-GreyColor" }` }> Home </NavLink>
+      ${ isActive ? "text-GoldColor" : "text-NavColor" }` }> Home </NavLink>
 
       <NavLink to="/Aboutus" className={({ isActive }) => `transition-all duration-1000 hover:text-GoldColor
-      ${ isActive ? "text-GoldColor" : "text-GreyColor" }` }> About Us </NavLink>
+      ${ isActive ? "text-GoldColor" : "text-NavColor" }` }> About Us </NavLink>
 
       <NavLink to="/Projects" className={({ isActive }) => `transition-all duration-1000 hover:text-GoldColor
-      ${ isActive ? "text-GoldColor" : "text-GreyColor" }` }> Projects </NavLink>
+      ${ isActive ? "text-GoldColor" : "text-NavColor" }` }> Projects </NavLink>
 
     <NavLink to="/Blog" className={({ isActive }) => `transition-all duration-1000 hover:text-GoldColor
-    ${ isActive ? "text-GoldColor" : "text-GreyColor" }` }> Blog </NavLink>
+    ${ isActive ? "text-GoldColor" : "text-NavColor" }` }> Blog </NavLink>
     
     {/* Contact US Button */}
-    <NavLink to="/Contactus" className="relative overflow-hidden group bg-GoldColor px-6 py-2 rounded-md  text-CardBgColor inline-block"> 
+    <NavLink to="/Contactus" className="relative overflow-hidden group bg-GoldColor px-6 py-2 rounded-md  text-BodyColor inline-block"> 
     
     {/* Background Layer jo slide karega */}
     <span className="absolute inset-0 w-0 bg-BodyColor transition-all duration-2000 linear group-hover:w-full"></span>
@@ -47,16 +47,16 @@ export const Header = ()=>{
   <div onClick={() => setIsOpen(false)} className="absolute top-10 right-10 text-GoldColor text-3xl"> ✕ </div>
 
   <NavLink to="/" onClick={() => setIsOpen(false)}
-  className="text-3xl text-GreyColor"> Home </NavLink>
+  className="text-3xl text-NavColor"> Home </NavLink>
 
   <NavLink to="/Aboutus" onClick={() => setIsOpen(false)}
-  className="text-3xl text-GreyColor"> About Us </NavLink>
+  className="text-3xl text-NavColor"> About Us </NavLink>
 
   <NavLink to="/Projects" onClick={() => setIsOpen(false)}
-  className="text-3xl text-GreyColor"> Projects </NavLink>
+  className="text-3xl text-NavColor"> Projects </NavLink>
 
   <NavLink to="/Blog" onClick={() => setIsOpen(false)}
-  className="text-3xl text-GreyColor"> Blog </NavLink>
+  className="text-3xl text-NavColor"> Blog </NavLink>
 
   <NavLink to="/Contactus" onClick={() => setIsOpen(false)}
   className="bg-GoldColor text-BodyColor px-10 py-3 rounded-md text-2xl"> Contact Us </NavLink>
