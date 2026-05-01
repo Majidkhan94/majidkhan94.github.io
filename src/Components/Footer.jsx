@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import { Navigation } from "../Features/Navigation";
 
 export const Footer = () => {
   return (<>
@@ -8,11 +9,13 @@ export const Footer = () => {
         <section>
           
           <nav className="md:flex gap-30 items-center justify-center font-bebas text-lg tracking-[1px] py-10 hidden">
-            <NavLink to="/" className={({ isActive }) => `transition-all duration-1000 hover:text-GoldColor ${isActive ? "text-GoldColor" : "text-NavColor"}`}> Home </NavLink>
-            <NavLink to="/Aboutus" className={({ isActive }) => `transition-all duration-1000 hover:text-GoldColor ${isActive ? "text-GoldColor" : "text-NavColor"}`}> About Us </NavLink>
-            <NavLink to="/Projects" className={({ isActive }) => `transition-all duration-1000 hover:text-GoldColor ${isActive ? "text-GoldColor" : "text-NavColor"}`}> Projects </NavLink>
-            <NavLink to="/Blog" className={({ isActive }) => `transition-all duration-1000 hover:text-GoldColor ${isActive ? "text-GoldColor" : "text-NavColor"}`}> Blog </NavLink>
-            <NavLink to="/Contactus" className={({ isActive }) => `transition-all duration-1000 hover:text-GoldColor ${isActive ? "text-GoldColor" : "text-NavColor"}`}> Contact Us </NavLink>
+            
+            <Navigation to={"/"} text={"Home"}/>
+            <Navigation to={"/Aboutus"} text={"About Us"}/>
+            <Navigation to={"/Projects"} text={"Projects"}/>
+            <Navigation to={"/Blog"} text={"Blog"}/>
+            <Navigation to={"/Contactus"} text={"Contact us"}/>
+            
           </nav>
 
           <hr className="border-GreyColor w-full mx-auto md:flex hidden" />

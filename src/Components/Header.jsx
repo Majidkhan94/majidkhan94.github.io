@@ -2,6 +2,8 @@ import '../index.css';
 import { NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from 'react';
+import { Navigation } from '../Features/Navigation';
+
 
 export const Header = ()=>{
   const [isOpen, setIsOpen] = useState(false);
@@ -15,29 +17,17 @@ export const Header = ()=>{
       {/* PC-Version Menu */}
       <nav className="md:flex gap-13 items-center font-bebas text-lg tracking-[1px] hidden">
     
-      <NavLink to="/" className={({ isActive }) => `transition-all duration-1000 hover:text-GoldColor
-      ${ isActive ? "text-GoldColor" : "text-NavColor" }` }> Home </NavLink>
+        <Navigation to={"/"} text={"Home"}/>
+        <Navigation to={"/Aboutus"} text={"About Us"}/>
+        <Navigation to={"/Projects"} text={"Projects"}/>
+        <Navigation to={"/Blog"} text={"Blog"}/>
 
-      <NavLink to="/Aboutus" className={({ isActive }) => `transition-all duration-1000 hover:text-GoldColor
-      ${ isActive ? "text-GoldColor" : "text-NavColor" }` }> About Us </NavLink>
-
-      <NavLink to="/Projects" className={({ isActive }) => `transition-all duration-1000 hover:text-GoldColor
-      ${ isActive ? "text-GoldColor" : "text-NavColor" }` }> Projects </NavLink>
-
-    <NavLink to="/Blog" className={({ isActive }) => `transition-all duration-1000 hover:text-GoldColor
-    ${ isActive ? "text-GoldColor" : "text-NavColor" }` }> Blog </NavLink>
-    
-    {/* Contact US Button */}
-    <NavLink to="/Contactus" className="relative overflow-hidden group bg-GoldColor px-6 py-2 rounded-md  text-BodyColor inline-block"> 
-    
-    {/* Background Layer jo slide karega */}
-    <span className="absolute inset-0 w-0 bg-BodyColor transition-all duration-2000 linear group-hover:w-full"></span>
-    
-    {/* Text Layer jo background ke upar rahega */}
-    <span className="relative z-10 group-hover:text-GoldColor transition-colors duration-1500"> 
-      Contact Us </span> </NavLink>
+        {/* Contact US Button */}
+        <NavLink to="/Contactus" 
+        className="px-4 py-2 rounded-md font-medium text-md inline-block border-2 border-GoldColor text-BodyColor bg-GoldColor transition-all duration-600 linear hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[6px_6px_0px_0px_#131314] active:translate-x-0 active:translate-y-0 active:shadow-none"> 
+        Contact us
+        </NavLink> 
       </nav>
-
 
       {/* Mobile-Version */}
   <nav className={`fixed inset-0 w-full h-screen z-9999 bg-BodyColor flex flex-col items-center justify-center gap-10 md:hidden transform transition-all duration-2000 linear font-bebas tracking-[1px]

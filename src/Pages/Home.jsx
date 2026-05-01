@@ -12,8 +12,8 @@ export const Home = ()=>{
   
 
 <div>
-    <PrimaryButton to={"/XYZ"} text={"View Projects"} />
-    <SecondaryButton to={"/XYZ"} text={"Contact Me"} />
+    <PrimaryButton to={"/Projects"} text={"View Projects"} />
+    <SecondaryButton to={"/Contactus"} text={"Contact Us"} />
 
 </div>
 </div>
