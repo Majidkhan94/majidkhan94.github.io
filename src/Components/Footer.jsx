@@ -4,7 +4,7 @@ import { SiGmail } from "react-icons/si";
 
 export const Footer = () => {
   return (<>
-      <footer className="bg-CardBgColor w-full flex flex-col justify-center items-center fixed bottom-0">
+      <footer className="bg-CardBgColor w-full flex flex-col justify-center items-center">
         <section>
           
           <nav className="md:flex gap-30 items-center justify-center font-bebas text-lg tracking-[1px] py-10 hidden">
