@@ -45,7 +45,7 @@ const AboutImage = ({src, text, className}) =>{
   
   <div className='w-full flex justify-center pt-5 md:pt-15'>
     <div className='w-220 text-justify'>
-      <Paragraph text={"I am a motivated Computer Science graduate and Full-Stack Developer with a deep focus on building scalable web applications. With hands-on expertise in the ASP.NET Core and MERN stack, I bridge the gap between robust backend logic and modern, interactive user interfaces. Whether it's engineering RESTful APIs with C# or crafting dynamic frontends with React, my goal is to deliver clean code and seamless user experiences. Based in Rawalpindi, I am ready to bring technical precision and creative solutions to real-world challenges."} />
+      <Paragraph text={"Computer Science graduate and Full-Stack Developer with a deep focus on building scalable web applications. With hands-on expertise in ASP.NET Core, MERN, and WordPress, I bridge the gap between backend logic and modern, interactive user interfaces. Whether it's engineering RESTful APIs with C# or crafting dynamic frontends with React, my goal is to deliver clean code and seamless user experiences. Based in Rawalpindi, I am ready to bring technical precision and creative solutions to real-world challenges."} />
 
         <div className='flex flex-wrap gap-x-4 md:gap-x-8 gap-y-12 pt-10 md:pt-15'>
           <AboutImage src={"../HTML.png"} text={"HTML5"} className={"text-[#eb3e00]"} />
