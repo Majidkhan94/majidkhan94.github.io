@@ -1,10 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
 
-*
-{
-  font-family: var(--font-bebas);
-}
+
 body{
   background-color: #151515;
 }
@@ -18,6 +15,7 @@ body{
   --color-GoldColor: #facc15;        /* Buttons aur yellow text ke liye */
   --color-GreyColor: #a1a1aa;   /* Paragraphs ke liye */
   --color-NavColor: #d1d5db;
+  --color-BottomBorder: #1e1e1e;
   /* Font */
   --font-bebas: 'Bebas Neue', sans-serif;
   --font-oswald: 'Oswald', sans-serif;    /* Links ke liye */

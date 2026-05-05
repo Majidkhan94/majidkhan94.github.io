@@ -1,33 +1,20 @@
 import '../index.css';
 import { NavLink } from 'react-router-dom';
 import {PrimaryButton, SecondaryButton} from "../Features/Button.jsx"
-import { Heading } from '../Features/Heading.jsx';
-import { Paragraph } from '../Features/Paragraph.jsx';
-
-// Functions
-
-const AboutImage = ({src, text, className}) =>{
-    return(<>
-    <div className='relative group w-fit'>  
-    <img className='w-12 grayscale opacity-50 transition-all duration-1000 group-hover:grayscale-0 group-hover:opacity-100 cursor-pointer' src={src} />
-
-   <span className={`absolute -bottom-7 text-center left-6 -translate-x-1/2 text-sm w-full font-bold font-oswald tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-1000 ${className}`}>
-      {text}
-    </span>
-</div>
-  </>)}  
-
-
+import { MainHeading } from '../Features/Heading.jsx';
+import { MainParagraph } from '../Features/Paragraph.jsx';
+import { AboutImage } from '../Features/AboutImage.jsx';
+import { Card } from '../Features/Card.jsx';
 
   export const Home = ()=>{
   return(<>
 
   {/* Hero_Section */}
-  <section className='w-full h-80 md:h-screen bg-[url("/Hero.png")] bg-contain bg-right bg-no-repeat'>
+  <section className='w-full h-80 md:h-screen bg-[url("/Hero.png")] bg-contain bg-right bg-no-repeat  border border-BottomBorder'>
     <div className="flex flex-col w-80 md:w-190 h-full items-start justify-center pl-5 md:pl-20">
-    <h1 className="text-GoldColor text-3xl md:text-6xl font-bold tracking-wider">Full Stack Developer</h1>
+    <h1 className="text-GoldColor text-3xl md:text-6xl font-bold font-bebas tracking-wider">Full Stack Developer</h1>
     
-    <Paragraph text={"Building high-quality web applications using ASP.NET Core and MERN stack. Focused on clean code and seamless user experiences that solve real-world problems."} className={"pt-3 pb-4 md:pt-5 md:pb-10"} />
+    <MainParagraph text={"Building high-quality web applications using ASP.NET Core and MERN stack. Focused on clean code and seamless user experiences that solve real-world problems."} className={"pt-3 pb-4 md:pt-5 md:pb-10"} />
     
     <div>
     <PrimaryButton to={"/Projects"} text={"View Projects"} />
@@ -37,15 +24,12 @@ const AboutImage = ({src, text, className}) =>{
   </section> 
 
 {/* About Us Section */}
-<section className='w-full md:h-screen flex flex-col justify-center pb-10 px-5 md:px-20'>
-
-  
-    <Heading text={"ABOUT ME"} />
-  
+<section className='w-full flex flex-col justify-center py-10 md:py-30 px-5 md:px-20  border border-BottomBorder'>
+    <MainHeading text={"ABOUT ME"} />
   
   <div className='w-full flex justify-center pt-5 md:pt-15'>
     <div className='w-220 text-justify'>
-      <Paragraph text={"Computer Science graduate and Full-Stack Developer with a deep focus on building scalable web applications. With hands-on expertise in ASP.NET Core, MERN, and WordPress, I bridge the gap between backend logic and modern, interactive user interfaces. Whether it's engineering RESTful APIs with C# or crafting dynamic frontends with React, my goal is to deliver clean code and seamless user experiences. Based in Rawalpindi, I am ready to bring technical precision and creative solutions to real-world challenges."} />
+      <MainParagraph text={"Computer Science graduate and Full-Stack Developer with a deep focus on building scalable web applications. With hands-on expertise in ASP.NET Core, MERN, and WordPress, I bridge the gap between backend logic and modern, interactive user interfaces. Whether it's engineering RESTful APIs with C# or crafting dynamic frontends with React, my goal is to deliver clean code and seamless user experiences. Based in Rawalpindi, I am ready to bring technical precision and creative solutions to real-world challenges."} />
 
         <div className='flex flex-wrap gap-x-4 md:gap-x-8 gap-y-12 pt-10 md:pt-15'>
           <AboutImage src={"../HTML.png"} text={"HTML5"} className={"text-[#eb3e00]"} />
@@ -63,9 +47,55 @@ const AboutImage = ({src, text, className}) =>{
 
     </div>
   </div>
-
 </section>
 
+
+{/* Technical Expertise Section */}
+<section className='w-full flex flex-col items-center py-10 md:py-30 px-5 md:px-20'>
+  <div className="w-full text-left md:text-left mb-10">
+    <MainHeading text={"Technical Expertise"} />
+  </div>
+
+  <div className="flex flex-wrap justify-center gap-4">
+    
+    {/* .NET */}
+    <div className="w-full md:w-90">
+      <Card HeadingText=".NET Development" 
+      ParagraphText="Architecting scalable backend logic and building robust web applications using ASP.NET Core."/>
+    </div>
+
+    {/* MERN */}
+    <div className="w-full md:w-90">
+      <Card HeadingText="MERN Stack" 
+      ParagraphText="Developing modern full-stack applications with MongoDB, Express, React, and Node.js."/>
+    </div>
+
+    {/* API Engineering */}
+    <div className="w-full md:w-90">
+      <Card HeadingText="API Engineering" 
+      ParagraphText="Designing and engineering high-performance RESTful APIs with C# for seamless data integration."/>
+    </div>
+
+    {/* Frontend Design */}
+    <div className="w-full md:w-90">
+      <Card HeadingText="Frontend Design" 
+      ParagraphText="Crafting interactive, responsive, and user-centric interfaces using React and modern CSS frameworks." />
+    </div>
+
+    {/* Database Management */}
+    <div className="w-full md:w-90">
+      <Card HeadingText="Database Management" 
+      ParagraphText="Managing data structures across both Relational (SQL Server) and NoSQL (MongoDB) environments."/>
+    </div>
+
+    {/* CMS Solutions */}
+    <div className="w-full md:w-90">
+      <Card HeadingText="CMS Solutions" 
+      ParagraphText="Building, customizing, and optimizing professional, content-driven websites using WordPress."/>
+    </div>
+
+  </div>
+</section>
 
 
   </>)}

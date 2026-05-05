@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { Navigation } from "../Features/Navigation";
-import { Paragraph } from "../Features/Paragraph";
+import { MainParagraph } from "../Features/Paragraph";
 
 export const Footer = () => {
   return (<>
@@ -26,7 +26,7 @@ export const Footer = () => {
           <NavLink to="/"><img className='w-20' src="/Logo.png" /></NavLink>  
           </span>
           <span>
-            <Paragraph text={"Build modern web applications with care and focus. My goal is to create fast, high-quality websites that are easy to use and help businesses succeed."} className={"text-center mx-auto md:w-160 py-5 md:py-15"} />
+            <MainParagraph text={"Build modern web applications with care and focus. My goal is to create fast, high-quality websites that are easy to use and help businesses succeed."} className={"text-center mx-auto md:w-160 py-5 md:py-15"} />
           </span>
         
         </section>
