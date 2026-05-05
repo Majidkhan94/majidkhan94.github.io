@@ -6,16 +6,16 @@ import { Paragraph } from '../Features/Paragraph.jsx';
 
 // Functions
 
-const AboutImage = ({src, text, className}) =>{
-    return(<>
-    <div className='relative group w-full'>  
-    <img className='w-12 grayscale opacity-50 transition-all duration-1000 group-hover:grayscale-0 group-hover:opacity-100 cursor-pointer' src={src} />
+// const AboutImage = ({src, text, className}) =>{
+//     return(<>
+//     <div className='relative group w-full'>  
+//     <img className='w-12 grayscale opacity-50 transition-all duration-1000 group-hover:grayscale-0 group-hover:opacity-100 cursor-pointer' src={src} />
 
-   <span className={`absolute -bottom-7 text-center left-6 -translate-x-1/2 text-sm w-full font-bold font-oswald tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-1000 ${className}`}>
-      {text}
-    </span>
-</div>
-  </>)}  
+//    <span className={`absolute -bottom-7 text-center left-6 -translate-x-1/2 text-sm w-full font-bold font-oswald tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-1000 ${className}`}>
+//       {text}
+//     </span>
+// </div>
+//   </>)}  
 
 
 
@@ -23,11 +23,11 @@ const AboutImage = ({src, text, className}) =>{
   return(<>
 
   {/* Hero_Section */}
-  <section className='w-full h-55 md:h-screen bg-[url("/Hero.png")] bg-contain bg-right bg-no-repeat'>
-    <div className="flex flex-col w-190 h-full items-start justify-center pl-20">
-    <h1 className="text-GoldColor text-6xl font-bold tracking-wider">Full Stack Developer</h1>
+  <section className='w-full h-80 md:h-screen bg-[url("/Hero.png")] bg-contain bg-right bg-no-repeat'>
+    <div className="flex flex-col w-80 md:w-190 h-full items-start justify-center pl-5 md:pl-20">
+    <h1 className="text-GoldColor text-3xl md:text-6xl font-bold tracking-wider">Full Stack Developer</h1>
     
-    <Paragraph text={"Building high-quality web applications using ASP.NET Core and MERN stack. Focused on clean code and seamless user experiences that solve real-world problems."} className={"pt-5 pb-10"} />
+    <Paragraph text={"Building high-quality web applications using ASP.NET Core and MERN stack. Focused on clean code and seamless user experiences that solve real-world problems."} className={"pt-3 pb-4 md:pt-5 md:pb-10"} />
     
     <div>
     <PrimaryButton to={"/Projects"} text={"View Projects"} />
@@ -37,12 +37,12 @@ const AboutImage = ({src, text, className}) =>{
   </section> 
 
 {/* About Us Section */}
-<section className='w-full h-screen flex flex-col justify-center px-20'>
+{/* <section className='w-full h-screen flex flex-col justify-center px-20'>
 
-  {/* Heading */}
+  
     <Heading text={"ABOUT ME"} />
   
-  {/* Paragraph*/}
+  
   <div className='w-full flex justify-center pt-15'>
     <div className='w-220 text-justify'>
       <Paragraph text={"I am a motivated Computer Science graduate and Full-Stack Developer with a deep focus on building scalable web applications. With hands-on expertise in the ASP.NET Core and MERN stack, I bridge the gap between robust backend logic and modern, interactive user interfaces. Whether it's engineering RESTful APIs with C# or crafting dynamic frontends with React, my goal is to deliver clean code and seamless user experiences. Based in Rawalpindi, I am ready to bring technical precision and creative solutions to real-world challenges."} />
@@ -64,7 +64,7 @@ const AboutImage = ({src, text, className}) =>{
     </div>
   </div>
 
-</section>
+</section> */}
 
 
 
