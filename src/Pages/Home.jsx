@@ -6,16 +6,16 @@ import { Paragraph } from '../Features/Paragraph.jsx';
 
 // Functions
 
-// const AboutImage = ({src, text, className}) =>{
-//     return(<>
-//     <div className='relative group w-full'>  
-//     <img className='w-12 grayscale opacity-50 transition-all duration-1000 group-hover:grayscale-0 group-hover:opacity-100 cursor-pointer' src={src} />
+const AboutImage = ({src, text, className}) =>{
+    return(<>
+    <div className='relative group w-fit'>  
+    <img className='w-12 grayscale opacity-50 transition-all duration-1000 group-hover:grayscale-0 group-hover:opacity-100 cursor-pointer' src={src} />
 
-//    <span className={`absolute -bottom-7 text-center left-6 -translate-x-1/2 text-sm w-full font-bold font-oswald tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-1000 ${className}`}>
-//       {text}
-//     </span>
-// </div>
-//   </>)}  
+   <span className={`absolute -bottom-7 text-center left-6 -translate-x-1/2 text-sm w-full font-bold font-oswald tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-1000 ${className}`}>
+      {text}
+    </span>
+</div>
+  </>)}  
 
 
 
@@ -37,17 +37,17 @@ import { Paragraph } from '../Features/Paragraph.jsx';
   </section> 
 
 {/* About Us Section */}
-{/* <section className='w-full h-screen flex flex-col justify-center px-20'>
+<section className='w-full md:h-screen flex flex-col justify-center pb-10 px-5 md:px-20'>
 
   
     <Heading text={"ABOUT ME"} />
   
   
-  <div className='w-full flex justify-center pt-15'>
+  <div className='w-full flex justify-center pt-5 md:pt-15'>
     <div className='w-220 text-justify'>
       <Paragraph text={"I am a motivated Computer Science graduate and Full-Stack Developer with a deep focus on building scalable web applications. With hands-on expertise in the ASP.NET Core and MERN stack, I bridge the gap between robust backend logic and modern, interactive user interfaces. Whether it's engineering RESTful APIs with C# or crafting dynamic frontends with React, my goal is to deliver clean code and seamless user experiences. Based in Rawalpindi, I am ready to bring technical precision and creative solutions to real-world challenges."} />
 
-        <div className='flex gap-5 pt-15'>
+        <div className='flex flex-wrap gap-x-4 gap-y-4 pt-10 md:pt-15'>
           <AboutImage src={"../HTML.png"} text={"HTML5"} className={"text-[#eb3e00]"} />
           <AboutImage src={"../CSS.png"}  text={"CSS3"} className={"text-[#0068ad]"} />
           <AboutImage src={"../Tailwind_Css.png"}  text={"Tailwind"} className={"text-[#00c2fc]"} />
@@ -64,7 +64,7 @@ import { Paragraph } from '../Features/Paragraph.jsx';
     </div>
   </div>
 
-</section> */}
+</section>
 
 
 
