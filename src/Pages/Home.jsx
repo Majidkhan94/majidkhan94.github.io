@@ -11,8 +11,14 @@ import { Card } from '../Features/Card.jsx';
 
   {/* Hero_Section */}
   <section className='w-full h-80 md:h-screen bg-[url("/Hero.png")] bg-contain bg-right bg-no-repeat  border border-BottomBorder'>
-    <div className="flex flex-col w-80 md:w-190 h-full items-start justify-center pl-5 md:pl-20">
-    <h1 className="text-GoldColor text-3xl md:text-6xl font-bold font-bebas tracking-wider">Full Stack Developer</h1>
+    <div className="flex flex-col w-80 md:w-190 h-full items-start justify-center pl-5 md:pl-20 relative">
+    <span> 
+
+    <MainHeading text={"Majid Khan"} className={"absolute top-20 text-[180px]!"}/>
+
+    </span>
+    
+    <h1 className="text-GoldColor text-3xl md:text-6xl font-bold font-bebas z-10 tracking-wider animate-slide-left-to-right">Full Stack Developer</h1>
     
     <MainParagraph text={"Building high-quality web applications using ASP.NET Core and MERN stack. Focused on clean code and seamless user experiences that solve real-world problems."} className={"pt-3 pb-4 md:pt-5 md:pb-10"} />
     
@@ -51,7 +57,7 @@ import { Card } from '../Features/Card.jsx';
 
 
 {/* Technical Expertise Section */}
-<section className='w-full flex flex-col items-center py-10 md:py-30 px-5 md:px-20'>
+<section className='w-full flex flex-col items-center py-10 md:py-30 px-5 md:px-20 border border-BottomBorder'>
   <div className="w-full text-left md:text-left mb-10">
     <MainHeading text={"Technical Expertise"} />
   </div>
@@ -59,43 +65,76 @@ import { Card } from '../Features/Card.jsx';
   <div className="flex flex-wrap justify-center gap-4">
     
     {/* .NET */}
-    <div className="w-full md:w-90">
+    <div className="w-full">
       <Card HeadingText=".NET Development" 
       ParagraphText="Architecting scalable backend logic and building robust web applications using ASP.NET Core."/>
     </div>
 
     {/* MERN */}
-    <div className="w-full md:w-90">
+    <span className="w-full md:w-90">
       <Card HeadingText="MERN Stack" 
       ParagraphText="Developing modern full-stack applications with MongoDB, Express, React, and Node.js."/>
-    </div>
+    </span>
 
     {/* API Engineering */}
-    <div className="w-full md:w-90">
+    <span className="w-full md:w-90">
       <Card HeadingText="API Engineering" 
       ParagraphText="Designing and engineering high-performance RESTful APIs with C# for seamless data integration."/>
-    </div>
+    </span>
 
     {/* Frontend Design */}
-    <div className="w-full md:w-90">
+    <span className="w-full md:w-90">
       <Card HeadingText="Frontend Design" 
       ParagraphText="Crafting interactive, responsive, and user-centric interfaces using React and modern CSS frameworks." />
-    </div>
+    </span>
 
     {/* Database Management */}
-    <div className="w-full md:w-90">
+    <span className="w-full md:w-90">
       <Card HeadingText="Database Management" 
       ParagraphText="Managing data structures across both Relational (SQL Server) and NoSQL (MongoDB) environments."/>
-    </div>
+    </span>
 
     {/* CMS Solutions */}
-    <div className="w-full md:w-90">
+    <span className="w-full md:w-90">
       <Card HeadingText="CMS Solutions" 
       ParagraphText="Building, customizing, and optimizing professional, content-driven websites using WordPress."/>
-    </div>
+    </span>
 
   </div>
 </section>
 
+
+{/* Services */}
+<section className='w-full flex flex-col items-center py-10 md:py-30 px-5 md:px-20'>
+<div className="w-full text-left md:text-left mb-10">
+    <MainHeading text={"Services"} />
+</div>
+
+<div className="flex flex-wrap justify-center gap-4">
+
+<div className="w-full md:w-90 relative">
+  <span className='absolute -top-7 right-0 text-7xl font-bebas text-GoldColor/10 '>01</span>
+<Card HeadingText=".NET Development" 
+ParagraphText="Architecting scalable backend logic and building robust web applications using ASP.NET Core."/>
+</div>
+
+<div className="w-full md:w-90 relative">
+  <span className='absolute -top-7 right-0 text-7xl font-bebas text-GoldColor/10 '>02</span>
+<Card HeadingText=".NET Development" 
+ParagraphText="Architecting scalable backend logic and building robust web applications using ASP.NET Core."/>
+</div>
+
+<div className="w-full md:w-90 relative">
+  <span className='absolute -top-7 right-0 text-7xl font-bebas text-GoldColor/10 '>03</span>
+<Card HeadingText=".NET Development" 
+ParagraphText="Architecting scalable backend logic and building robust web applications using ASP.NET Core."/>
+</div>
+
+</div>
+    
+
+
+
+</section>
 
   </>)}

@@ -1,9 +1,10 @@
 export const MainHeading = ({text, className}) => {
   return(<>
-  <h1 className={`text-CardBgColor hover:text-NavColor cursor-pointer font-bebas text-6xl md:text-9xl font-semibold  tracking-wider  ${className}`}>
+  <h1 className={`text-[#181818] w-full hover:text-BottomBorder cursor-pointer font-bebas text-6xl md:text-9xl font-semibold  tracking-wider animate-slide-BottomtoTop  ${className}`}>
   {text}
   </h1>
   </>)}
+
 
 
 

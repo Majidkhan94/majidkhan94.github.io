@@ -19,5 +19,21 @@ body{
   /* Font */
   --font-bebas: 'Bebas Neue', sans-serif;
   --font-oswald: 'Oswald', sans-serif;    /* Links ke liye */
+
+  /* Animations */
+
+  @keyframes LefttoRight{
+    from{ transform: translateX(-200px); opacity: 0 }
+    to{ transform:translate(0px); opacity: 1 }
+  }
+  --animate-slide-left-to-right: LefttoRight 1.5s linear;
+
+  @keyframes BottomtoTop{
+    from{ transform: translateY(200px); opacity: 0;}
+    to{ transform: translateY(0px); opacity: 1;}
+  }
+  --animate-slide-BottomtoTop: BottomtoTop 1.5s linear
+
+
 }
 
