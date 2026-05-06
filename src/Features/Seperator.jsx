@@ -7,7 +7,7 @@ export const Seperator = ({text}) => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 1 }}
-      className="border-t border-ParaColor/30 text-center my-5">
+      className="border-t border-ParaColor/30 text-center my-10 md:my-5">
       
       <motion.legend
         initial={{ opacity: 0, y: 10 }}
