@@ -1,39 +1,18 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
-
-
-body{
-  background-color: #151515;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
+body{ background-color: #080808; }
+
+
+
 @theme {
-  /* Backgrounds */
-  --color-CardBgColor: #484848;     /* Boxes aur cards ka background */
-  --color-BodyColor: #131314;     /* Boxes aur cards ka background */
-  --color-GoldColor: #facc15;        /* Buttons aur yellow text ke liye */
-  --color-GreyColor: #a1a1aa;   /* Paragraphs ke liye */
-  --color-NavColor: #d1d5db;
-  --color-BottomBorder: #1e1e1e;
+  /* Colors */
+  --color-BgColor: #080808;
+  --color-LightColor: #101010;
+  --color-ParaColor: #9c9c9c; 
   /* Font */
-  --font-bebas: 'Bebas Neue', sans-serif;
-  --font-oswald: 'Oswald', sans-serif;    /* Links ke liye */
-
-  /* Animations */
-
-  @keyframes LefttoRight{
-    from{ transform: translateX(-200px); opacity: 0 }
-    to{ transform:translate(0px); opacity: 1 }
-  }
-  --animate-slide-left-to-right: LefttoRight 1.5s linear;
-
-  @keyframes BottomtoTop{
-    from{ transform: translateY(200px); opacity: 0;}
-    to{ transform: translateY(0px); opacity: 1;}
-  }
-  --animate-slide-BottomtoTop: BottomtoTop 1.5s linear
-
+  --font-Heading: 'Saira', sans-serif;
+  --font-Paragraph: 'Abel', sans-serif;
 
 }
 

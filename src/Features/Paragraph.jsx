@@ -1,16 +1,7 @@
-export const MainParagraph = ({ text, className }) => {
+export const Paragraph = ({ text, className }) => {
   return (
     <>
-      <p className={`text-NavColor text-sm md:text-lg font-oswald tracking-wider leading-relaxed ${className}`}>
-        {text}
-      </p>
-    </>)}
-
-
-export const CardParagraph = ({ text, className }) => {
-  return (
-    <>
-      <p className={`text-NavColor text-sm md:text-base font-oswald leading-relaxed ${className}`}>
+      <p className={`text-ParaColor font-Paragraph tracking-wider leading-relaxed ${className}`}>
         {text}
       </p>
     </>)}

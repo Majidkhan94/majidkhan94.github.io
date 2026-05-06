@@ -1,22 +1,12 @@
 import { NavLink } from "react-router-dom";
 import '../index.css';
 
-export const PrimaryButton = ({ text, to }) => {
+export const Button = ({ text, to, onClick }) => {
   return (<>
-<NavLink to={to} 
-  className="px-2 py-2 md:px-4 md:py-2 rounded-md font-medium font-bebas text-sm md:text-lg tracking-wider inline-block border-2 border-GoldColor text-BodyColor bg-GoldColor mr-3 transition-all duration-600 linear hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[6px_6px_0px_0px_#706420] active:translate-x-0 active:translate-y-0 active:shadow-none"> 
+<NavLink to={to}
+  onClick = {onClick} 
+  className="px-5 py-2 rounded-md font-semibold font-Paragraph text-base tracking-wider inline-block border border-ParaColor text-ParaColor mr-3 transition-all duration-600 linear hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[3px_3px_0px_0px_#9c9c9c] active:translate-x-0 active:translate-y-0 active:shadow-none"> 
   {text}
 
 </NavLink>
   </>)}
-
-
-export const SecondaryButton = ({ text, to }) => {
-  return (<>
-  <NavLink to={to} 
-  className="px-2 py-2 md:px-4 md:py-2 rounded-md font-medium text-sm font-bebas md:text-lg tracking-wider inline-block border-2 border-NavColor text-NavColor bg-transparent mr-3 transition-all duration-600 linear hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[6px_6px_0px_0px_#d1d5db] active:translate-x-0 active:translate-y-0 active:shadow-none"> 
-  {text}
-
-</NavLink>  
-  </>)}
-
