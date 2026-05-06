@@ -10,7 +10,7 @@ export const Header = ()=>{
   const [isOpen, setIsOpen] = useState(false);
   return (<>
     
-      <header className='h-20 bg-LightColor flex justify-between items-center p-12 md:px-25'>
+      <header className='h-20 flex justify-between items-center p-12 md:px-25'>
       
       {/* Logo */}
       <span>
@@ -24,7 +24,7 @@ export const Header = ()=>{
         <Navigation to={"/Aboutus"} text={"About Us"}/>
         <Navigation to={"/Projects"} text={"Projects"}/>
         <Navigation to={"/Blog"} text={"Blog"}/>
-        <Button to={"/Contactus"} text={"Contact"}/>
+        <Button to={"/Contactus"} text={"Contact Us"}/>
 
       </nav>
 
