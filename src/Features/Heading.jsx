@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { easeOut, motion } from "framer-motion";
 
 export const Heading = ({text, className}) => {
   return(<>
@@ -14,22 +14,41 @@ export const Heading = ({text, className}) => {
  </>)}
 
 
+export const BigHeading = ({text, className}) => {
+return(<>
 
+<motion.h1
+  initial={{opacity:0, y: 200}}
+  whileInView={{opacity:1, y: 0}}
+  viewport={{once:true, amount:0.5}}
+  transition={{duration:1, ease: easeOut}}
+  className={`${className} text-8xl font-Heading font-bold text-LightColor -z-50`}>
+{text}
+</motion.h1>
+</>)}
 
+export const SubHeading = ({text, className}) => {
+return(<>
 
-
-
-
-
-
-
-
+<motion.h1
+  initial={{opacity:0, y: 200}}
+  whileInView={{opacity:1, y: 0}}
+  viewport={{once:true, amount:0.5}}
+  transition={{duration:1, ease: easeOut}}
+  className={`${className} text-lg font-Heading text-white`}>
+{text}
+</motion.h1>
+  </>)}
 
 export const CardHeading = ({text, className}) => {
-  return(<>
-<h1 className={`text-GoldColor text-2xl md:text-2xl font-semibold font-bebas tracking-widest  ${className}`}>
+return(<>
+
+<motion.h1
+  initial={{opacity:0, y: 200}}
+  whileInView={{opacity:1, y: 0}}
+  viewport={{once:true, amount:0.5}}
+  transition={{duration:1, ease: easeOut}}
+  className={`${className} text-lg font-Heading text-white`}>
 {text}
-</h1>
-
-
+</motion.h1>
   </>)}
