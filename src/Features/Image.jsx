@@ -28,8 +28,7 @@ export const IconImage = ({src, text, className}) =>{
       group-hover:grayscale-0 group-hover:opacity-100 
       group-hover:scale-125 group-hover:-translate-y-2
       group-hover:drop-shadow-[0_0_15px_rgba(255,215,0,0.6)]
-      cursor-pointer`}
-  />
+      cursor-pointer`} />
   
   {/* Tooltip: Hover pe tech ka naam dikhane ke liye */}
   <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 
