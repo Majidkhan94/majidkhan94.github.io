@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Routing } from "../src/Routing/Routing.jsx";
-import { SplashScreen } from "./Features/SplashScreen.jsx";
+import { SplashScreen } from "./Components/SplashScreen.jsx";
 import { AnimatePresence, motion } from "framer-motion";
 
 export const App = () => {

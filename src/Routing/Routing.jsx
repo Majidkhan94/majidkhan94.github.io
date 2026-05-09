@@ -5,6 +5,7 @@ import { Aboutus } from "../Pages/Aboutus"
 import { Blog } from "../Pages/Blog"
 import { Contactus } from "../Pages/Contactus"
 import { Projects } from "../Pages/Projects"
+import { Technicalexpertise } from "../Pages/Technicalexpertise"
 
 
 export const Routing = ()=>{
@@ -14,6 +15,7 @@ export const Routing = ()=>{
         <Route path="" element={ <Layout />}>  
         <Route path="/" element={ <Home />} />  
         <Route path="/Aboutus" element={ <Aboutus />} />  
+        <Route path="/Technicalexpertise" element={ <Technicalexpertise />} />  
         <Route path="/Projects" element={ <Projects />} />  
         <Route path="/Blog" element={ <Blog />} />  
         <Route path="/Contactus" element={ <Contactus/>} />  

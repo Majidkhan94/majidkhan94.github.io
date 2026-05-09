@@ -22,7 +22,7 @@ export const Header = ()=>{
     
         <Navigation to={"/"} text={"Home"}/>
         <Navigation to={"/Aboutus"} text={"About Us"}/>
-        <Navigation to={"/Aboutus"} text={"Technical Expertise"}/>
+        <Navigation to={"/Technicalexpertise"} text={"Technical Expertise"}/>
         <Navigation to={"/Projects"} text={"Projects"}/>
         <Navigation to={"/Blog"} text={"Blog"}/>
         <Button to={"/Contactus"} text={"Contact Us"}/>
@@ -42,13 +42,17 @@ export const Header = ()=>{
   <NavLink to="/Aboutus" onClick={() => setIsOpen(false)}
   className="text-3xl text-ParaColor"> About Us </NavLink>
 
+  <NavLink to="/Technicalexpertise" onClick={() => setIsOpen(false)}
+  className="text-3xl text-ParaColor"> Technicalexpertise </NavLink>
+
   <NavLink to="/Projects" onClick={() => setIsOpen(false)}
   className="text-3xl text-ParaColor"> Projects </NavLink>
 
   <NavLink to="/Blog" onClick={() => setIsOpen(false)}
   className="text-3xl text-ParaColor"> Blog </NavLink>
 
-  <Button to={"/Contactus"} text={"Contact"} onClick={() => setIsOpen(false)} />
+  <NavLink to="/Contactus" onClick={() => setIsOpen(false)}
+  className="text-3xl text-ParaColor"> Contactus </NavLink>
   
 </nav>
 
