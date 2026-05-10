@@ -14,7 +14,6 @@ export const Footer = () => {
             <Navigation to={"/Aboutus"} text={"About Us"}/>
             <Navigation to={"/Technicalexpertise"} text={"Technical Expertise"}/>
             <Navigation to={"/Projects"} text={"Projects"}/>
-            <Navigation to={"/Blog"} text={"Blog"}/>
             <Navigation to={"/Contactus"} text={"Contact us"}/>
             
           </nav>

@@ -19,14 +19,14 @@ export const Home = ()=>{
 
 {/* Technical Expertise Section */}
 
-{/* <Technicalexpertise /> */}
+<Technicalexpertise />
 
 {/* Project Section */}
 
-{/* <Projects ProjectsData={ProjectApi.slice(0,6)}/> */}
+<Projects ProjectsData={ProjectApi.slice(0,6)}/>
 
 {/* ContactUs Section */}
 
-{/* <Contactus /> */}
+<Contactus />
 
   </>)}
