@@ -14,19 +14,15 @@ export const Home = ()=>{
 <HeroSection />
 
 {/* About_Section */}
-
 <Aboutus AboutusData={AboutusApis.slice(0, 2)} />
 
 {/* Technical Expertise Section */}
-
 <Technicalexpertise />
 
 {/* Project Section */}
-
 <Projects ProjectsData={ProjectApi.slice(0,6)}/>
 
 {/* ContactUs Section */}
-
 <Contactus />
 
   </>)}
