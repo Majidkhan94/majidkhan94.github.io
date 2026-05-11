@@ -1,5 +1,8 @@
+import { Seperator } from "../Features/Seperator.jsx"
+import { ContactusSection } from "../Sections/ContactusSection"
 export const Contactus = () =>{return(<>
 
-<h1 className="text-9xl text-GoldColor">Contact Us</h1>
+<Seperator Lefttext={"Contactus"} Righttext={"View More"} to={"/Contactus"} />
+<ContactusSection />
 
 </>)}

@@ -1,13 +1,12 @@
-import { Seperator } from "../Features/Seperator.jsx";
 import { TechnicalexpertiseApi } from "../Apis/TechnicalexpertiseApi.js";
 import { CardHeading } from "../Features/Heading.jsx";
 import { Paragraph } from "../Features/Paragraph.jsx";
 import { motion } from "framer-motion";
 
-export const Technicalexpertise = () => {
+export const TechnicalexpertiseSection = () => {
   return (<>
       
-      <Seperator Lefttext={"Technical Expertise"} Righttext={"View More"} to={"/Technicalexpertise"} />
+      
 
       {/* SECTION */}
       <section className="w-full min-h-screen flex justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 py-3 text-white">

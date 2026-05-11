@@ -13,34 +13,21 @@ export const Aboutus = () =>{
   const Card = ({ HeadingText, SubheadingText, FirstulText, SecondulText, ThirdulText }) => {
   return (
     <motion.div
-      // Mobile par slide thora kam rakhein (x: -50) taake smooth lage
-      initial={{ opacity: 0, x: -50 }} 
-      whileInView={{ opacity: 1, x: 0 }} 
-      viewport={{ once: true, amount: 0.2 }} // Mobile par viewport amount kam rakhte hain taake jaldi trigger ho
-      transition={{ duration: 1.2 }}
+      initial={{ opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 50 }} 
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      className="p-6 md:p-10 w-full md:max-w-250" >
       
-      // Responsive Classes:
-      // Mobile par padding kam (p-6), Desktop par p-10
-      // Mobile par width full (w-full), Desktop par w-[250px] ya jo bhi aapka size hai
-      className="p-6 md:p-10 w-full md:w-[600px] lg:w-[800px] mx-auto"
-    >
       <div className='flex flex-col gap-2'>
-        {/* Heading mobile par thori choti (text-2xl) */}
-        <Heading text={HeadingText} className="text-2xl md:text-3xl!" />
-        
-        <SubHeading text={SubheadingText} className="text-sm md:text-base" />
+        <Heading text={HeadingText} className="text-lg md:text-3xl!" />
+        <SubHeading text={SubheadingText} className="text-sm md:text-base!" />
 
         {FirstulText && (
-          <ul className="flex flex-col gap-3 list-disc list-outside ml-5 mt-4">
-            <li className="text-ParaColor text-sm md:text-base">
-              <Paragraph text={FirstulText} className="inline" />
-            </li>
-            <li className="text-ParaColor text-sm md:text-base">
-              <Paragraph text={SecondulText} className="inline" />
-            </li>
-            <li className="text-ParaColor text-sm md:text-base">
-              <Paragraph text={ThirdulText} className="inline" />
-            </li>
+          <ul className="flex flex-col gap-4 list-disc list-outside ml-5 mt-6">
+            <li className="text-ParaColor"><Paragraph text={FirstulText} className="inline" /></li>
+            <li className="text-ParaColor"><Paragraph text={SecondulText} className="inline" /></li>
+            <li className="text-ParaColor"><Paragraph text={ThirdulText} className="inline" /></li>
           </ul>
         )}
       </div>
@@ -86,7 +73,7 @@ ThirdulText={"Developed and documented RESTful APIs, performing endpoint testing
 
 {/* OTHER EXPERIENCE */}
 
-<section>
+<section className='pb-0 md:pb-10'>
 <Seperator Lefttext={"OTHER EXPERIENCE"} Righttext={"2022 - 2024"}/>
 <Card HeadingText={"Medical Billing"} SubheadingText={"Kaizen Systems"}
 
@@ -94,7 +81,7 @@ FirstulText={"Processed 300+ medical claims monthly and collaborated with health
 
 SecondulText={"Analyzed complex healthcare datasets to identify discrepancies, ensuring 100% compliance with industry regulations."}
 
-ThirdulText={""}
+ThirdulText={"Optimized claim submission workflows to reduce rejection rates, significantly accelerating the overall payment cycle."}
 />
 </section>
 

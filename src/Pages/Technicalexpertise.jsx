@@ -1,4 +1,8 @@
+import { Seperator } from "../Features/Seperator"
+import { TechnicalexpertiseSection } from "../Sections/TechnicalexpertiseSection"
+
 export const Technicalexpertise = () =>{return(<>
 
-<h1 className="text-9xl text-GoldColor">Technicalexpertise</h1>
+<Seperator Lefttext={"Technical Expertise"} />
+<TechnicalexpertiseSection />
 </>)}

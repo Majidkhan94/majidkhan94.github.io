@@ -1,5 +1,4 @@
-import { Seperator } from "../Features/Seperator";
-import { Heading } from "../Features/Heading";
+import { Heading } from "../Features/Heading.jsx";
 import { Button } from "../Features/Button.jsx";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
@@ -11,7 +10,7 @@ const Input = ({ placeholder, type, className, name, required }) => {
       className={`${className} w-full bg-transparent border-b-2 border-ParaColor py-2 outline-none focus:border-white text-white placeholder:text-gray-500`} />
     </div>)}
 
-export const Contactus = () => {
+export const ContactusSection = () => {
   
     const form = useRef();
 
@@ -33,7 +32,7 @@ export const Contactus = () => {
       (error) => { alert("Error: " + error.text)})}
 
   return (<>
-      <Seperator Lefttext={"Contactus"} Righttext={"View More"} to={"/Contactus"} />
+      
 
       <section className="w-full min-h-screen flex flex-col lg:flex-row">
         

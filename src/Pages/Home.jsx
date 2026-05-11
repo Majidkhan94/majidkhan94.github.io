@@ -2,10 +2,10 @@ import '../index.css';
 import { HeroSection } from '../Sections/HeroSection.jsx';
 import { AboutusSection } from '../Sections/AboutusSection.jsx';
 import { AboutusApis } from '../Apis/AboutusApis.js';
-import { Technicalexpertise } from '../Sections/Technicalexpertise.jsx';
-import { Projects } from '../Sections/Projects.jsx';
+import { TechnicalexpertiseSection } from '../Sections/TechnicalexpertiseSection.jsx';
+import { ProjectSection } from '../Sections/ProjectSection.jsx';
 import { ProjectApi } from '../Apis/ProjectApi.js';
-import { Contactus } from '../Sections/Contactus.jsx';
+import { Contactus, ContactusSection } from '../Sections/ContactusSection.jsx';
 import { Seperator } from "../Features/Seperator.jsx";
 
 export const Home = ()=>{
@@ -19,12 +19,15 @@ export const Home = ()=>{
 <AboutusSection AboutusData={AboutusApis.slice(0, 2)} />
 
 {/* Technical Expertise Section */}
-<Technicalexpertise />
+<Seperator Lefttext={"Technical Expertise"} Righttext={"View More"} to={"/Technicalexpertise"} />
+<TechnicalexpertiseSection />
 
 {/* Project Section */}
-<Projects ProjectsData={ProjectApi.slice(0,6)}/>
+<Seperator Lefttext={"Projects"} Righttext={"View More"} to={"/Projects"} />
+<ProjectSection ProjectsData={[...ProjectApi].slice(0,6).sort((a, b)=> b.ProjectId - a.ProjectId)}/>
 
 {/* ContactUs Section */}
-<Contactus />
+<Seperator Lefttext={"Contactus"} Righttext={"View More"} to={"/Contactus"} />
+<ContactusSection />
 
   </>)}

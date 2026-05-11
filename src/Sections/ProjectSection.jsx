@@ -3,17 +3,17 @@ import { Paragraph } from "../Features/Paragraph.jsx";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { ProjectApi } from "../Apis/ProjectApi.js";
-import { Seperator } from "../Features/Seperator.jsx";
+
 
 const ProjectNavLink = motion(NavLink);
 
-export const Projects = ({ ProjectsData }) => {
+export const ProjectSection = ({ ProjectsData = [] }) => {
   return (<>
       
       <section className="flex flex-col w-full px-4 sm:px-6 md:px-10 lg:px-16 py-3">
         
         {/* Heading */}
-        <Seperator Lefttext={"Projects"} Righttext={"View More"} to={"/Projects"} />
+        
 
         {/* Projects */}
         <div className="flex flex-wrap gap-y-8 pt-10">

@@ -1,7 +1,11 @@
+import { ProjectSection } from "../Sections/ProjectSection.jsx"
+import { Seperator } from "../Features/Seperator.jsx"
+import { ProjectApi } from "../Apis/ProjectApi.js"
+
 export const Projects = () =>{return(<>
 
-
-<h1 className="text-9xl text-GoldColor">Project</h1>
+<Seperator Lefttext={"Projects"} />
+<ProjectSection ProjectsData={[...ProjectApi].sort((a, b) => b.ProjectId - a.ProjectId)} />
 
 
 </>)}
