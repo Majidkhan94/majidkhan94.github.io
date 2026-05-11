@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from 'react-router-dom';
 import { Routing } from "../src/Routing/Routing.jsx";
 import { SplashScreen } from "./Components/SplashScreen.jsx";
 import { AnimatePresence, motion } from "framer-motion";
@@ -26,9 +26,9 @@ useEffect(() => {
         : (
           <motion.div
             key="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} >
-            <BrowserRouter>
+            <HashRouter>
               <Routing />
-            </BrowserRouter>
+            </HashRouter>
           </motion.div>
         )}
       </AnimatePresence>
