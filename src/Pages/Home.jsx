@@ -5,7 +5,7 @@ import { AboutusApis } from '../Apis/AboutusApis.js';
 import { TechnicalexpertiseSection } from '../Sections/TechnicalexpertiseSection.jsx';
 import { ProjectSection } from '../Sections/ProjectSection.jsx';
 import { ProjectApi } from '../Apis/ProjectApi.js';
-import { Contactus, ContactusSection } from '../Sections/ContactusSection.jsx';
+import { ContactusSection } from '../Sections/ContactusSection.jsx';
 import { Seperator } from "../Features/Seperator.jsx";
 
 export const Home = ()=>{
