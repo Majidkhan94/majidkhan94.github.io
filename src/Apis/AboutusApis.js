@@ -40,7 +40,7 @@ export const AboutusApis = [
       { image: "/Wp-Bakery.png", name: "WP Bakery", },
       { image: "/Elementor.png", name: "Elementor", },
       { image: "/Woocommerce.png", name: "WooCommerce", },
-      { image: "/Youst.png", name: "Yoast SEO", },
+      { image: "/Youst.png", name: "SEO", },
       { image: "/Mailchimp.png", name: "Mailchimp", }, ],
   }
 ]

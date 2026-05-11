@@ -1,11 +1,12 @@
 import '../index.css';
 import { HeroSection } from '../Sections/HeroSection.jsx';
-import { Aboutus } from '../Sections/Aboutus.jsx';
+import { AboutusSection } from '../Sections/AboutusSection.jsx';
 import { AboutusApis } from '../Apis/AboutusApis.js';
 import { Technicalexpertise } from '../Sections/Technicalexpertise.jsx';
 import { Projects } from '../Sections/Projects.jsx';
 import { ProjectApi } from '../Apis/ProjectApi.js';
 import { Contactus } from '../Sections/Contactus.jsx';
+import { Seperator } from "../Features/Seperator.jsx";
 
 export const Home = ()=>{
   return(<>
@@ -14,7 +15,8 @@ export const Home = ()=>{
 <HeroSection />
 
 {/* About_Section */}
-<Aboutus AboutusData={AboutusApis.slice(0, 2)} />
+<Seperator Lefttext={"AboutUs"} Righttext={"View More"} to={"/Aboutus"} />
+<AboutusSection AboutusData={AboutusApis.slice(0, 2)} />
 
 {/* Technical Expertise Section */}
 <Technicalexpertise />

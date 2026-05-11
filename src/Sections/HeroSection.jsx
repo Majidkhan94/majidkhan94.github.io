@@ -14,24 +14,18 @@ const HeroSectionData =
   ]
 
   return(<>
-  <section className='flex flex-col-reverse md:flex-row w-full h-fit md:h-screen pl-0 md:pl-30 '>
+  <section className='flex flex-col-reverse md:flex-row w-full h-screen pl-0 md:pl-30 '>
 
         {HeroSectionData.map((item, index)=>{
           return(
           <div key={index} className='flex flex-1 flex-col gap-6 justify-center text-center md:text-left'>
-            <div>
-                <Heading text={item.HeroSectionHeading}/>   
-            </div>
-            <div className='w-full md:w-140'>
-              <Paragraph text={item.HeroSectionParagraph} />       
-            </div>
+            <div> <Heading text={item.HeroSectionHeading} /> </div>
+            <div className='w-full md:w-140'> <Paragraph text={item.HeroSectionParagraph} /> </div>
 
             <div>
               <Button to={"/Projects"} text={"View Projects"}/>
               <Button to={"/Contactus"} text={"Contact Us"}/>
             </div>
-
-
           </div>)
         })}
     
