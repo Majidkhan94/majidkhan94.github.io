@@ -47,4 +47,11 @@ export const ProjectApi =
     ProjectHeading: "Authentication System",
     ProjectParagraph: "Full Stack Authentication System developed using the MERN stack. It features secure JWT, password encryption with Bcrypt, and seamless profile management."
   },
+  {
+    ProjectId: 7,
+    ProjectUrl: "https://apexsound.vercel.app/",
+    ProjectImage: "./ApexSound.PNG",
+    ProjectHeading: "ApexSound",
+    ProjectParagraph: "Full Stack E-Commerce Platform built with ASP.NET Core and React. It features JWT authentication, multi-role access, Stripe payments, and complete order tracking."
+  },
 ]

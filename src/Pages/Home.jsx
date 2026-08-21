@@ -24,7 +24,7 @@ export const Home = ()=>{
 
 {/* Project Section */}
 <Seperator Lefttext={"Projects"} Righttext={"View More"} to={"/Projects"} />
-<ProjectSection ProjectsData={[...ProjectApi].slice(0,6).sort((a, b)=> b.ProjectId - a.ProjectId)}/>
+<ProjectSection ProjectsData={[...ProjectApi].sort((a, b)=> b.ProjectId - a.ProjectId).slice(0,6)}/>
 
 {/* ContactUs Section */}
 <Seperator Lefttext={"Contactus"} Righttext={"View More"} to={"/Contactus"} />

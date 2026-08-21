@@ -20,7 +20,7 @@ export const ContactusSection = () => {
     
     { ContactHeading: "Mail", ContactParagraph: "Majidkhan.dev94@gmail.com" },
     
-    { ContactHeading: "Phone", ContactParagraph: "+923411022489" },
+    //{ ContactHeading: "Phone", ContactParagraph: "+923411022489" },
   
   ];
 
